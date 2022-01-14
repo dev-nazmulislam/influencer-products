@@ -55,6 +55,12 @@ body {
 /* Section-02 Header-top or Menu area Start here */
 /* Section-02 Header-top or Menu area End here  */
 /* Section-03 Header-bottom or Banner area Start here */
+img#animation {
+  transition: all ease 0.5s;
+}
+img#animation:hover {
+  transform: scale(1.2) rotate(20deg);
+}
 /* Section-03 Header-bottom or Banner area End here */
 /* Section-01: Main-Header Area End here */
 
@@ -136,9 +142,9 @@ body {
   text-align: center;
   position: relative;
 }
-.container-bonus h1,
-.container-bonus h3 {
+.container-bonus h1 {
   margin-bottom: 0.8rem;
+  color: #c6e600;
 }
 .container-bonus::before {
   content: "";
@@ -168,32 +174,82 @@ body {
 .content::before {
   content: "";
   position: absolute;
-  top: -60px;
-  left: 180px;
+  height: 20%;
+  top: -40px;
+  left: 100px;
   width: 60px;
-  height: 60%;
   filter: blur(60px);
   background: linear-gradient(white, white);
   transform: rotate(-45deg);
-  box-shadow: 5px 150px 200px 100px rgba(255, 255, 255, 0.897);
+  box-shadow: 5px 150px 200px 100px rgb(255, 255, 255);
+  transition: all ease 0.8s;
 }
 .content::after {
   content: "";
   position: absolute;
-  top: -60px;
-  right: 180px;
+  height: 20%;
+  top: -40px;
+  right: 100px;
   width: 60px;
-  height: 60%;
   filter: blur(60px);
   background: linear-gradient(white, white);
   transform: rotate(45deg);
-  box-shadow: -5px 150px 200px 100px rgba(255, 255, 255, 0.897);
+  box-shadow: -5px 150px 200px 100px rgb(255, 255, 255);
+  transition: all ease 0.8s;
 }
 .profile {
   display: block;
   width: 25%;
   border-radius: 50%;
   margin: 1rem auto;
+  transition: all ease 1s;
+}
+.container-bonus:hover .profile {
+  transform: scale(1.2);
+}
+.container-bonus:hover .content::before {
+  animation-duration: 3s;
+  animation-name: shadow-move1;
+  animation-iteration-count: infinite;
+}
+@keyframes shadow-move1 {
+  0% {
+    height: 20%;
+    top: -40px;
+    left: 100px;
+  }
+  50% {
+    height: 60%;
+    top: -60px;
+    left: 180px;
+  }
+  100% {
+    height: 80%;
+    top: -70px;
+    left: 200px;
+  }
+}
+@keyframes shadow-move2 {
+  0% {
+    height: 20%;
+    top: -40px;
+    right: 100px;
+  }
+  50% {
+    height: 80%;
+    top: -70px;
+    right: 200px;
+  }
+  100% {
+    height: 60%;
+    top: -60px;
+    right: 180px;
+  }
+}
+.container-bonus:hover .content::after {
+  animation-duration: 3s;
+  animation-name: shadow-move2;
+  animation-iteration-count: infinite;
 }
 /* Section-07: Bonous or Extra area End Here */
 
