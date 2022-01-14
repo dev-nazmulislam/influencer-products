@@ -1,0 +1,240 @@
+/* Common Style here */
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  /* background-color: #f1f7fa; */
+}
+.container {
+  width: 90%;
+  margin: 3rem auto;
+}
+.flaxible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.half-width {
+  width: 50%;
+  padding: 1rem;
+}
+.half-width img {
+  width: 95%;
+}
+.half-width > * {
+  margin-bottom: 1.5rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #ee356f;
+  color: #f1f7fa;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  transition: all ease 0.3s;
+}
+.btn:hover {
+  background-color: #ff2dc7;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Section-01: Main-Header Area Start here */
+/* Section-02 Header-top or Menu area Start here */
+/* Section-02 Header-top or Menu area End here  */
+/* Section-03 Header-bottom or Banner area Start here */
+/* Section-03 Header-bottom or Banner area End here */
+/* Section-01: Main-Header Area End here */
+
+/* Section-04: Payment Syestem area Start Here */
+.payment-container {
+  width: 75%;
+  margin: 2rem auto;
+  padding: 0.2rem;
+  border-radius: 10px;
+  background: linear-gradient(to right, #f1f7fa, rgb(177, 174, 174), #f1f7fa);
+}
+.payment-item {
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: #f1f7fa;
+}
+.payment-item img {
+  margin-right: 5%;
+}
+.item-dvider {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Section-04: Payment Syestem area End Here */
+
+/* Section-05: Popular Collection area Start Here */
+.popular-collection h1 {
+  font-size: 2rem;
+  color: #3a3a3a;
+  margin-bottom: 2rem;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.card {
+  border-radius: 15px;
+  box-shadow: 3px 3px 30px rgb(212, 209, 209);
+  padding: 1rem;
+  color: #18191faf;
+}
+.card > * {
+  margin-bottom: 0.8rem;
+}
+.card-img img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+.fa-star,
+.fa-star-half-alt {
+  color: #fb8200;
+}
+#see-moore {
+  font-weight: 600;
+  color: #ee356f;
+  float: right;
+  margin-top: 1rem;
+}
+#see-moore:hover {
+  color: #ff2dc7;
+}
+/* Section-05: Popular Collection area End Here */
+
+/* Section-06: Featured products area Start Here */
+/* Section-06: Featured products area End Here */
+
+/* Section-07: Bonous or Extra area Start Here */
+.container-bonus {
+  width: 90%;
+  margin: 3rem auto;
+  background-color: #5490da;
+  border-radius: 10px;
+  padding: 5rem 0rem;
+  text-align: center;
+  position: relative;
+}
+.container-bonus h1,
+.container-bonus h3 {
+  margin-bottom: 0.8rem;
+}
+.container-bonus::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  width: 100px;
+  height: 20px;
+  background: linear-gradient(to top, #ffffff, black);
+  border-radius: 50%;
+  transform: rotate(-40deg);
+}
+.container-bonus::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  width: 100px;
+  height: 20px;
+  background: linear-gradient(to top, #ffffff, black);
+  border-radius: 50%;
+  transform: rotate(40deg);
+}
+.content {
+  position: relative;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 180px;
+  width: 60px;
+  height: 60%;
+  filter: blur(60px);
+  background: linear-gradient(white, white);
+  transform: rotate(-45deg);
+  box-shadow: 5px 150px 200px 100px rgba(255, 255, 255, 0.897);
+}
+.content::after {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: 180px;
+  width: 60px;
+  height: 60%;
+  filter: blur(60px);
+  background: linear-gradient(white, white);
+  transform: rotate(45deg);
+  box-shadow: -5px 150px 200px 100px rgba(255, 255, 255, 0.897);
+}
+.profile {
+  display: block;
+  width: 25%;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+/* Section-07: Bonous or Extra area End Here */
+
+/* Section-07: Footer area Start Here */
+footer {
+  background-color: #0a0826;
+  color: #d9dbe1;
+  text-align: center;
+  padding: 4rem 0rem;
+}
+footer h1 {
+  color: white;
+}
+footer > * {
+  margin-bottom: 0.6rem;
+}
+.icon i {
+  font-size: 24px;
+  padding: 1rem;
+  background-color: #22213c;
+  border-radius: 50%;
+  margin: 0.8rem;
+}
+/* Section-07: Footer area End Here */
+
+/* Responsive CSS Style Here */
+@media screen and (max-width: 800px) {
+  .flaxible {
+    flex-direction: column-reverse;
+  }
+  .half-width {
+    width: 100%;
+  }
+  .payment-item {
+    flex-direction: column;
+  }
+  .item-dvider {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

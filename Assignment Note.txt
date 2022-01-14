@@ -1,0 +1,18 @@
+Assignment-02 Reqoerments
+
+What to do?:
+Submit Your repository link.
+Submit Your website link.
+
+Main Tasks:
+01. Create a website Like "Influencer Gear" Website.
+02. Responsive this website for Mobile and tablet.
+03. Use extra thing for icon
+04. use google font.
+05. Add Animation in headar section.
+06. Add single part like this website.
+07. Clean HTML, CSS Code.
+
+Marks Syestem:
+Main Marks: 50
+Bonus Marks: 10
