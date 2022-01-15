@@ -10,6 +10,9 @@
   align-items: center;
   text-align: center;
 }
+.menu-container h1:hover {
+  text-decoration: underline;
+}
 .menu {
   display: flex;
   align-items: center;
@@ -30,7 +33,7 @@
   transition: all ease 0.5s;
 }
 .menu li a:hover {
-  background-color: #ee356f;
+  background-color: #b6108a;
   color: #f1f7fa;
 }
 .mobile-nav {

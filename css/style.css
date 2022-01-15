@@ -9,6 +9,7 @@
   list-style: none;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f1f7fa;
@@ -37,15 +38,16 @@ body {
   padding: 0.8rem 2rem;
   font-size: 1.2rem;
   font-weight: 600;
-  background-color: #ee356f;
   color: #f1f7fa;
-  border-radius: 25px;
+  background-color: #ee356f;
   outline: none;
   border: none;
+  border-radius: 25px;
+  cursor: pointer;
   transition: all ease 0.3s;
 }
 .btn:hover {
-  background-color: #ff2dc7;
+  background-color: #b6108a;
 }
 .text-center {
   text-align: center;
@@ -76,17 +78,23 @@ img#animation:hover {
 }
 .payment-item {
   border-radius: 10px;
-  padding: 2rem;
+  padding: 1rem;
   background-color: #f1f7fa;
 }
-.payment-item img {
+.payment-dvider img {
   margin-right: 5%;
+  padding: 1rem;
+  border-radius: 10px;
 }
 .payment-dvider {
   width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.payment-dvider img:hover {
+  background-color: #f9fdff;
+  cursor: pointer;
 }
 /* Section-03: Payment Syestem area End Here */
 
@@ -102,23 +110,38 @@ img#animation:hover {
   gap: 1.5rem;
 }
 .card {
+  max-height: 550px;
   border-radius: 15px;
   box-shadow: 3px 3px 30px rgb(212, 209, 209);
   padding: 1rem;
   color: #18191faf;
+  overflow: hidden;
+  transition: all ease 0.5s;
+}
+.card:hover {
+  background-color: #ffffff;
 }
 .card > * {
   margin-bottom: 0.8rem;
+}
+.card h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .card-img img {
   width: 100%;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
+  transition: all ease 0.3;
+}
+.card-img img:hover {
+  opacity: 0.9;
 }
 .fa-star,
 .fa-star-half-alt {
   color: #fb8200;
+  font-size: 0.8rem;
 }
 #see-moore {
   font-weight: 600;
@@ -128,6 +151,7 @@ img#animation:hover {
 }
 #see-moore:hover {
   color: #ff2dc7;
+  text-decoration: underline;
 }
 /* Section-04: Popular Collection area End Here */
 
@@ -146,9 +170,14 @@ Nothing to sow Made with previaus or Common CSS
   text-align: center;
   position: relative;
 }
-.container-bonus h1 {
-  margin-bottom: 0.8rem;
+.container-bonus h1,
+.container-bonus h3 {
+  margin: 0.8rem 0rem;
   color: #fff;
+}
+.container-bonus h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .container-bonus::before {
   content: "";
@@ -264,8 +293,11 @@ footer {
   text-align: center;
   padding: 4rem 0rem;
 }
-footer h1 {
+footer a {
   color: white;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 footer > * {
   margin-bottom: 0.6rem;
@@ -276,6 +308,11 @@ footer > * {
   background-color: #22213c;
   border-radius: 50%;
   margin: 0.8rem;
+  cursor: pointer;
+  color: white;
+}
+.icon i:hover {
+  background-color: #393857;
 }
 /* Section-07: Footer area End Here */
 
