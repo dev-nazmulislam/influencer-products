@@ -18,12 +18,20 @@
 .menu li {
   margin-right: 18px;
 }
+
 .menu li:last-child {
   margin-right: 0px;
 }
 .menu li a {
   font-size: 1rem;
   color: rgb(54, 54, 54);
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+.menu li a:hover {
+  background-color: #ee356f;
+  color: #f1f7fa;
 }
 .mobile-nav {
   display: none;

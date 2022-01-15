@@ -11,7 +11,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  /* background-color: #f1f7fa; */
+  background-color: #f1f7fa;
 }
 .container {
   width: 90%;
@@ -27,7 +27,7 @@ body {
   padding: 1rem;
 }
 .half-width img {
-  width: 95%;
+  width: 90%;
 }
 .half-width > * {
   margin-bottom: 1.5rem;
@@ -51,20 +51,22 @@ body {
   text-align: center;
 }
 
-/* Section-01: Main-Header Area Start here */
-/* Section-02 Header-top or Menu area Start here */
-/* Section-02 Header-top or Menu area End here  */
-/* Section-03 Header-bottom or Banner area Start here */
+/* Section-01 Header-top or Menu area Start here
+               see nav.css File.
+****************************************************
+   Section-01 Header-top or Menu area End here  
+*/
+
+/* Section-02 Header-bottom or Banner area Start here */
 img#animation {
   transition: all ease 0.5s;
 }
 img#animation:hover {
   transform: scale(1.2) rotate(20deg);
 }
-/* Section-03 Header-bottom or Banner area End here */
-/* Section-01: Main-Header Area End here */
+/* Section-02 Header-bottom or Banner area End here */
 
-/* Section-04: Payment Syestem area Start Here */
+/* Section-03: Payment Syestem area Start Here */
 .payment-container {
   width: 75%;
   margin: 2rem auto;
@@ -80,15 +82,15 @@ img#animation:hover {
 .payment-item img {
   margin-right: 5%;
 }
-.item-dvider {
+.payment-dvider {
   width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* Section-04: Payment Syestem area End Here */
+/* Section-03: Payment Syestem area End Here */
 
-/* Section-05: Popular Collection area Start Here */
+/* Section-04: Popular Collection area Start Here */
 .popular-collection h1 {
   font-size: 2rem;
   color: #3a3a3a;
@@ -127,12 +129,14 @@ img#animation:hover {
 #see-moore:hover {
   color: #ff2dc7;
 }
-/* Section-05: Popular Collection area End Here */
+/* Section-04: Popular Collection area End Here */
 
-/* Section-06: Featured products area Start Here */
-/* Section-06: Featured products area End Here */
+/* Section-05: Featured products area Start Here
+Nothing to sow Made with previaus or Common CSS 
+****************************************************
+    Section-05: Featured products area End Here */
 
-/* Section-07: Bonous or Extra area Start Here */
+/* Section-06: Bonous or Extra area Start Here */
 .container-bonus {
   width: 90%;
   margin: 3rem auto;
@@ -144,7 +148,7 @@ img#animation:hover {
 }
 .container-bonus h1 {
   margin-bottom: 0.8rem;
-  color: #c6e600;
+  color: #fff;
 }
 .container-bonus::before {
   content: "";
@@ -251,7 +255,7 @@ img#animation:hover {
   animation-name: shadow-move2;
   animation-iteration-count: infinite;
 }
-/* Section-07: Bonous or Extra area End Here */
+/* Section-06: Bonous or Extra area End Here */
 
 /* Section-07: Footer area Start Here */
 footer {
@@ -286,12 +290,15 @@ footer > * {
   .payment-item {
     flex-direction: column;
   }
-  .item-dvider {
+  .payment-dvider {
     width: 100%;
     margin-bottom: 1rem;
   }
   .card-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  #featured-products {
+    flex-direction: column;
   }
 }
 
@@ -306,11 +313,14 @@ footer > * {
   .payment-item {
     flex-direction: column;
   }
-  .item-dvider {
+  .payment-dvider {
     width: 100%;
     margin-bottom: 1rem;
   }
   .card-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  #featured-products {
+    flex-direction: column;
   }
 }
