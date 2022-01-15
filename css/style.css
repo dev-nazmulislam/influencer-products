@@ -275,8 +275,28 @@ footer > * {
 }
 /* Section-07: Footer area End Here */
 
-/* Responsive CSS Style Here */
-@media screen and (max-width: 800px) {
+/* Responsive for Small Devices for 0px to 576px*/
+@media screen and (max-width: 576px) {
+  .flaxible {
+    flex-direction: column-reverse;
+  }
+  .half-width {
+    width: 100%;
+  }
+  .payment-item {
+    flex-direction: column;
+  }
+  .item-dvider {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Responsive for Medium devices (tablets, 577px to 800px) */
+@media screen and (min-width: 577px) and (max-width: 800px) {
   .flaxible {
     flex-direction: column-reverse;
   }
