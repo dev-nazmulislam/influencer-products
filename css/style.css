@@ -255,11 +255,13 @@ Nothing to sow Made with previaus or Common CSS
     height: 60%;
     top: -60px;
     left: 180px;
+    box-shadow: 5px 150px 200px 100px rgb(255, 0, 0);
   }
   100% {
     height: 80%;
     top: -70px;
     left: 200px;
+    box-shadow: 5px 150px 200px 100px rgb(4, 0, 235);
   }
 }
 @keyframes shadow-move2 {
@@ -272,11 +274,13 @@ Nothing to sow Made with previaus or Common CSS
     height: 80%;
     top: -70px;
     right: 200px;
+    box-shadow: 5px 150px 200px 100px rgb(255, 0, 0);
   }
   100% {
     height: 60%;
     top: -60px;
     right: 180px;
+    box-shadow: 5px 150px 200px 100px rgb(4, 0, 235);
   }
 }
 .container-bonus:hover .content::after {
